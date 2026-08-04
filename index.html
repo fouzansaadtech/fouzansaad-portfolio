@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,24 +17,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="cursor-glow"></div>
 
 <header>
-    <nav class="navbar">
+<nav class="navbar">
 
-        <div class="logo">🚀 DATA ANALYST</div>
+    <div class="logo">🚀 DATA ANALYST</div>
 
-        <ul class="nav-links">
-           <li><a href="#home">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#skills">Skills</a></li>
-           <li><a href="#projects">Projects</a></li>
-           <li><a href="#resume">Resume</a></li>
-           <li><a href="#contact">Contact</a></li>
-        </ul>
+    <button class="menu-toggle">
+        ☰
+    </button>
 
-    </nav>
+    <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
 </header>
-<section class="hero">
+<section id="home" class="hero">
 
     <div class="hero-left">
 
@@ -46,9 +57,10 @@
             <span>Saad H</span>
         </h1>
 
-        <h2 class="typing">
-            Aspiring Data Analyst
-        </h2>
+        <h2>
+    I'm a
+    <span class="typing"></span>
+    </h2>
 
         <p class="hero-description">
             Passionate about transforming raw data into meaningful insights using SQL,
@@ -67,8 +79,9 @@
 
         <div class="hero-buttons">
 
-            <a href="resume/Resume.pdf" class="btn">
-                Download Resume
+            <a href="resume.pdf" class="btn pulse-btn">
+              <i class="fas fa-download"></i>
+              Download Resume
             </a>
 
             <a href="https://github.com/fouzansaadtech"
@@ -101,7 +114,6 @@
 <h2 id="typing"></h2>
 
 <p class="about-description">
-    
  I recently completed my Bachelor's degree in Computer Science with a specialization in
 Artificial Intelligence and Machine Learning. I graduated in 2026.
 with hands-on experience in SQL (PostgreSQL), Python,
@@ -135,17 +147,17 @@ level Data Analyst or SQL Developer role to apply analytical and problem-solving
 
 <div class="about-info">
 
-<div class="about-card">
+<div class="about-card reveal">
 <h3>🎓 Education</h3>
 <p>Bachelor's Degree in Computer Science<br>Specialization in AI & ML</p>
 </div>
 
-<div class="about-card">
+<div class="about-card reveal">
 <h3>📍 Location</h3>
 <p>India</p>
 </div>
 
-<div class="about-card">
+<div class="about-card reveal">
 <h3>💼 Career Goal</h3>
 <p>Data Analyst<br>SQL Developer<br>Business Analyst</p>
 </div>
@@ -170,32 +182,32 @@ level Data Analyst or SQL Developer role to apply analytical and problem-solving
 
         <div class="skills-grid">
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-solid fa-database"></i>
                 <h3>SQL</h3>
             </div>
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-brands fa-python"></i>
                 <h3>Python</h3>
             </div>
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-solid fa-chart-column"></i>
                 <h3>Power BI</h3>
             </div>
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-solid fa-file-excel"></i>
                 <h3>Excel</h3>
             </div>
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-solid fa-server"></i>
                 <h3>PostgreSQL</h3>
             </div>
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
                 <i class="fa-solid fa-table"></i>
                 <h3>Pandas</h3>
             </div>
@@ -218,7 +230,7 @@ level Data Analyst or SQL Developer role to apply analytical and problem-solving
         <div class="projects-grid">
 
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card reveal">
 
                 <img src="Images/dashboard.png" alt="Power BI Dashboard">
 
@@ -251,7 +263,7 @@ level Data Analyst or SQL Developer role to apply analytical and problem-solving
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card">
+            <div class="project-card reveal">
 
                 <img src="Images/Employee table.png" alt="PostgreSQL Project">
 
@@ -305,7 +317,7 @@ level Data Analyst or SQL Developer role to apply analytical and problem-solving
 
         <div class="contact-grid">
 
-            <div class="contact-card">
+            <div class="contact-card reveal">
                 <h3>Email</h3>
                 <p>fouzansaad.tech@gmail.com</p>
             </div>
@@ -334,7 +346,11 @@ level Data Analyst or SQL Developer role to apply analytical and problem-solving
     <p>© 2026 Fouzan Saad. All Rights Reserved.</p>
 
 </footer>
-<script src="script.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<button id="topBtn" title="Back to Top">
+    ↑
+</button>
+<script src="script.js"></script>
 
 
 </body>
